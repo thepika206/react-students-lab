@@ -67,15 +67,18 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <h2>Student Info</h2>
+      </header>
+      <div className='Main'>
         {
           students.map((student,idx) => 
-            <Student 
-              key={idx}
-              student={student}
-            />
+          <Student 
+          key={idx}
+          student={student}
+          />
           )
         }
-      </header>
+      </div>
     </div>
   );
 }
